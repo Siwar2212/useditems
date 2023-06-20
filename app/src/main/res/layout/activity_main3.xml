@@ -26,6 +26,7 @@
                 android:layout_marginRight="3dp"
                 android:backgroundTint="#8BADCD"/>
             <Button
+                android:id="@+id/clothesBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Clothes"
@@ -36,6 +37,7 @@
                 android:layout_marginRight="3dp"
                 android:backgroundTint="#8BADCD"/>
             <Button
+                android:id="@+id/carsBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cars"
@@ -48,6 +50,7 @@
       </LinearLayout>
 
      <GridLayout
+         android:visibility="visible"
          android:id="@+id/cardsLayout"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
@@ -68,17 +71,25 @@
                app:cardElevation="12dp">
 
                  <ImageView
+                     android:id="@+id/firstIV"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:src="@drawable/used_1"
                      />
                <ImageView
+                   android:id="@+id/firstInfo"
                    android:layout_width="40dp"
                    android:layout_height="40dp"
                    android:src="@drawable/info_icon"
                    android:layout_gravity="right"
                    android:layout_marginTop="2dp"
                    />
+
+               <ImageView
+                   android:id="@+id/want1item"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/want_icon" />
 
            </androidx.cardview.widget.CardView>
 
@@ -90,17 +101,24 @@
                app:cardCornerRadius="15dp"
                app:cardElevation="12dp">
                <ImageView
+                   android:id="@+id/secIV"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:src="@drawable/used_2"
                    />
                <ImageView
+                   android:id="@+id/secInfo"
                    android:layout_width="40dp"
                    android:layout_height="40dp"
                    android:src="@drawable/info_icon"
                    android:layout_gravity="right"
                    android:layout_marginTop="2dp"
                    />
+               <ImageView
+                   android:id="@+id/want2item"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/want_icon" />
 
            </androidx.cardview.widget.CardView>
 
@@ -113,19 +131,37 @@
                app:cardElevation="12dp">
 
                <ImageView
+                   android:id="@+id/thirdIV"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:src="@drawable/used_3"
                    />
                <ImageView
+                   android:id="@+id/thirdInfo"
                    android:layout_width="40dp"
                    android:layout_height="40dp"
                    android:src="@drawable/info_icon"
                    android:layout_gravity="right"
                    android:layout_marginTop="2dp"
                    />
-
+               <ImageView
+                   android:id="@+id/want3item"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/want_icon" />
            </androidx.cardview.widget.CardView>
      </GridLayout>
+
+    <ImageView
+        android:id="@+id/addIV"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/add_item_icon"
+        android:layout_marginBottom="9dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+<!--    we build 2 other GridLayout that contains cardViews for
+        each topic + a list view to display contexts from storage firebase-->
 
 </RelativeLayout>
