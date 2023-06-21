@@ -45,6 +45,7 @@
             android:layout_marginRight="20dp"
             android:hint="PassWord"
             android:textColorHint="@color/black"
+            android:inputType="textPassword"
             android:textSize="40dp"
             android:textStyle="italic" />
 
